@@ -9,7 +9,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 5;
 const CORRECT_BONUS = 1;
 
 
