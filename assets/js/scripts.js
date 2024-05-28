@@ -176,3 +176,14 @@ const selectCategory = (category) => {
         }
     };
 
+// load quiz
+
+
+const loadQuiz = () => {
+    questionCounter = 0;
+    score = 0;
+    getNewQuestion();
+  };
+
+  
+  
