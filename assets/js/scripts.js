@@ -16,142 +16,136 @@ const CORRECT_BONUS = 1;
 //Questions Arrays
 
 const countriesQuestions = [
-    {
-      question: '?',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 1
-    },
-    {
-      question: '?',
-        choice1: '',
-        choice2: '', 
-        choice3: '', 
-        choice4: '', 
-        answer: 4
-      
-    },
-    {
-        question: '?',
-          choice1: '', 
-          choice2: '',
-          choice3: '', 
-          choice4: '', 
-          answer: 2
-        
-      },
-      {
-        question: '?',
-          choice1: '',
-          choice2: '', 
-          choice3: '', 
-          choice4: '',
-        answer: 4
-      },  
-      {
-        question: '',
-          choice1: '', 
-          choice2: '', 
-          choice3: '', 
-          choice4: '', 
-        answer: 1
-      },
-     
-   ]
+
+  {
+    question: 'What is the capital city of the United States of America?',
+    choice1: 'New York',
+    choice2: 'Los Angeles',
+    choice3: 'Washington, D.C.',
+    choice4: 'Chicago',
+    answer: 3
+  },
+  {
+    question: 'Which city is the capital of Japan?',
+    choice1: 'Osaka',
+    choice2: 'Tokyo',
+    choice3: 'Kyoto',
+    choice4: 'Hiroshima',
+    answer: 2
+  },
+  {
+    question: 'Name the capital city of Brazil.',
+    choice1: 'Brasília',
+    choice2: 'Rio de Janeiro',
+    choice3: 'São Paulo',
+    choice4: 'Salvador',
+    answer: 1
+  },
+  {
+    question: 'What is the capital city of the United Kingdom?',
+    choice1: 'London',
+    choice2: 'Birmingham',
+    choice3: 'Edinburgh',
+    choice4: 'Manchester',
+    answer: 1
+  },
+  {
+    question: 'Which city is the capital of Germany?',
+    choice1: 'Frankfurt',
+    choice2: 'Berlin',
+    choice3: 'Munich',
+    choice4: 'Hamburg',
+    answer: 2
+  }
+]
 
    const mountainsQuestions = [
+
     {
-      question: '?',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 1
+      question: 'What is the highest mountain in the world?',
+      choice1: 'Mount Kilimanjaro',
+      choice2: 'Mount Everest',
+      choice3: 'Mount McKinley',
+      choice4: 'Mount Fuji',
+      answer: 2
     },
     {
-      question: '?',
-        choice1: '',
-        choice2: '', 
-        choice3: '', 
-        choice4: '', 
-        answer: 4
-      
+      question: 'Which mountain is known as the highest peak in Africa?',
+      choice1: 'Mount Everest',
+      choice2: 'Mount McKinley',
+      choice3: 'Mount Kilimanjaro',
+      choice4: 'Mount Elbrus',
+      answer: 3
     },
     {
-        question: '?',
-          choice1: '', 
-          choice2: '',
-          choice3: '', 
-          choice4: '', 
-          answer: 2
-        
-      },
-      {
-        question: '?',
-          choice1: '',
-          choice2: '', 
-          choice3: '', 
-          choice4: '',
-        answer: 4
-      },  
-      {
-        question: '',
-          choice1: '', 
-          choice2: '', 
-          choice3: '', 
-          choice4: '', 
-        answer: 1
-      },
-     
-   ]
+      question: 'Which mountain range is home to Mount Everest?',
+      choice1: 'Rocky Mountains',
+      choice2: 'Andes',
+      choice3: 'Himalayas',
+      choice4: 'Alps',
+      answer: 3
+    },
+    {
+      question: 'In which country is Mount Fuji located?',
+      choice1: 'China',
+      choice2: 'Japan',
+      choice3: 'South Korea',
+      choice4: 'Thailand',
+      answer: 2
+    },
+    {
+      question: 'Which mountain is the highest in the Alps?',
+      choice1: 'Zugspitze',
+      choice2: 'Mont Blanc',
+      choice3: 'Matterhorn',
+      choice4: 'Mount Elbrus',
+      answer: 2
+    }
+  ]
 
    const riversQuestions = [
+
     {
-      question: '?',
-        choice1: '', 
-        choice2: '', 
-        choice3: '', 
-        choice4: '',
-        answer: 1
+      question: 'What is the longest river in the United States?',
+      choice1: 'Missouri River',
+      choice2: 'Mississippi River',
+      choice3: 'Colorado River',
+      choice4: 'Ohio River',
+      answer: 1
     },
     {
-      question: '?',
-        choice1: '',
-        choice2: '', 
-        choice3: '', 
-        choice4: '', 
-        answer: 4
-      
+      question: 'Which river is the longest in South America?',
+      choice1: 'Paraná River',
+      choice2: 'Amazon River',
+      choice3: 'Orinoco River',
+      choice4: 'Magdalena River',
+      answer: 2
     },
     {
-        question: '?',
-          choice1: '', 
-          choice2: '',
-          choice3: '', 
-          choice4: '', 
-          answer: 2
-        
-      },
-      {
-        question: '?',
-          choice1: '',
-          choice2: '', 
-          choice3: '', 
-          choice4: '',
-        answer: 4
-      },  
-      {
-        question: '',
-          choice1: '', 
-          choice2: '', 
-          choice3: '', 
-          choice4: '', 
-        answer: 1
-      },
-     
-   ]
+      question: 'What is the longest river in China?',
+      choice1: 'Yellow River',
+      choice2: 'Pearl River',
+      choice3: 'Yangtze River',
+      choice4: 'Mekong River',
+      answer: 3
+    },
+    {
+      question: 'Which river is the longest in Africa?',
+      choice1: 'Congo River',
+      choice2: 'Nile River',
+      choice3: 'Niger River',
+      choice4: 'Zambezi River',
+      answer: 2
+    },
+    {
+      question: 'What is the longest river in Europe?',
+      choice1: 'Danube River',
+      choice2: 'Rhine River',
+      choice3: 'Volga River',
+      choice4: 'Dnieper River',
+      answer: 3
+    }     
+  ]
 
    //category select function
 
