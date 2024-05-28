@@ -159,18 +159,18 @@ const selectCategory = (category) => {
     switch(category) {
         case "countries":
           availableQuestions = [...countriesQuestions];
-          document.getElementById("name").innerText = "";
+          document.getElementById("category-name").innerText = "";
           console.log('author');
           loadQuiz();
           break;
         case "mountains":
           availableQuestions = [...mountainsQuestions];
-          document.getElementById("name").innerText = "";
+          document.getElementById("category-name").innerText = "";
           loadQuiz();
           break;
         case "rivers":
           availableQuestions = [...riversQuestions];
-          document.getElementById("name").innerText = "";
+          document.getElementById("category-name").innerText = "";
           loadQuiz();
           break;
         }
@@ -184,6 +184,29 @@ const loadQuiz = () => {
     score = 0;
     getNewQuestion();
   };
+
+  //generate questions in random order
+
+  const getNewQuestion = () => {
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+      // Go to the end page
+      consolelog("end")
+    }
+
+ questionCounter++;
+  questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+  currentQuestion = availableQuestions[questionIndex];
+  questionElement.innerText = currentQuestion.question;
+
+  choices.forEach(choice => {
+    const number = choice.dataset['number'];
+    choice.innerText = currentQuestion['choice' + number];
+  });
+
+  availableQuestions.splice(questionIndex, 1);
+  acceptingAnswers = true;
+};
 
   
   
