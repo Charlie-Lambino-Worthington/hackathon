@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/29ef0a5efd.js" crossorigin="anonymous"></script>
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
+    <div class="container homepage category">
+        <div class="container-category">
+            <div class="controls">
+                <h1>select category</h1>
+            
+        <button onclick="selectCategory('countries')" id="countriescatagory" class="startbtn"><i class="fa-solid fa-globe"></i> Countries</button>
+        <button onclick="selectCategory('mountains')" id="mountainscatagory" class="startbtn"><i class="fa-solid fa-mountain-sun"></i> Mountains</button>
+         <button onclick="selectCategory('rivers')" id="riverscatagory" class="startbtn"><i class="fa-solid fa-water"></i> Rivers</button>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="container homepage quiz">
+    <div id="quiz" class="centered">
     
+        <h1 id="category-name"></h1>
+        <div id="hud">
+            <div id="hud-item">
+              <p class="hud-prefix">
+                Question
+              </p>
+              <h1 class="hud-main-text" id="questionCounter"></h1>
+            </div>
+            <div id="hud-item">
+              <p class="hud-prefix">
+                Score
+              </p>
+              <h1 class="hud-main-text" id="score">
+               0
+              </h1>
+            </div>
+          </div>
+<br>
+        <h2 id="question" class="headline-seconday--grouped"></h2>
+    
+    
+        <div class="answerbuttons btn-grid">
+        <button class="btn--default" data-number="1"></button>
+        <br>
+        <button class="btn--default" data-number="2"></button>
+        <br>
+        <button class="btn--default" data-number="3"></button>
+        <br>
+        <button class="btn--default" data-number="4"></button>
+        </div>
+        <p class="answer">Answer is</p>
+    </div>
+</div>
+
+<div class="container homepage win-lose">
+    <div id="end" class="centered">
+    
+        <h1 id="name">f</h1>
+       
+
+    </div>
+</div>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
