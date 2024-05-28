@@ -15,7 +15,7 @@ const CORRECT_BONUS = 1;
 
 //Questions Arrays
 
-const authorQuestions = [
+const countriesQuestions = [
     {
       question: '?',
         choice1: '', 
@@ -61,7 +61,7 @@ const authorQuestions = [
      
    ]
 
-   const authorQuestions = [
+   const mountainsQuestions = [
     {
       question: '?',
         choice1: '', 
@@ -107,7 +107,7 @@ const authorQuestions = [
      
    ]
 
-   const authorQuestions = [
+   const riversQuestions = [
     {
       question: '?',
         choice1: '', 
@@ -152,3 +152,27 @@ const authorQuestions = [
       },
      
    ]
+
+   //category select function
+
+const selectCategory = (category) => {
+    switch(category) {
+        case "countries":
+          availableQuestions = [...countriesQuestions];
+          document.getElementById("name").innerText = "";
+          console.log('author');
+          loadQuiz();
+          break;
+        case "mountains":
+          availableQuestions = [...mountainsQuestions];
+          document.getElementById("name").innerText = "";
+          loadQuiz();
+          break;
+        case "rivers":
+          availableQuestions = [...riversQuestions];
+          document.getElementById("name").innerText = "";
+          loadQuiz();
+          break;
+        }
+    };
+
