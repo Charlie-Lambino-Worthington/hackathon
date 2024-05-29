@@ -21,11 +21,12 @@
                <br>
               
               <h3>select category</h3>
-            
-        <button onclick="selectCategory('countries')" id="countriescatagory" class="startbtn"><i class="fa-solid fa-globe"></i> Countries</button>
-        <button onclick="selectCategory('mountains')" id="mountainscatagory" class="startbtn"><i class="fa-solid fa-mountain-sun"></i> Mountains</button>
-         <button onclick="selectCategory('rivers')" id="riverscatagory" class="startbtn"><i class="fa-solid fa-water"></i> Rivers</button>
+       <div id="buttoncontainer">    
+          <button onclick="selectCategory('countries')" id="countriescatagory" class="startbtn"><i class="fa-solid fa-globe"></i>  Countries</button>
+          <button onclick="selectCategory('mountains')" id="mountainscatagory" class="startbtn"><i class="fa-solid fa-mountain-sun"></i>  Mountains</button>
+          <button onclick="selectCategory('rivers')" id="riverscatagory" class="startbtn"><i class="fa-solid fa-water"></i> Rivers</button>
         </div>
+      </div>
     </div>
     </div>
 </div>
@@ -54,16 +55,16 @@
         <h2 id="question" class="headline-seconday--grouped"></h2>
     
     
-        <div class="answerbuttons btn-grid">
-        <button class="btn--default" data-number="1"></button>
-        <br>
-        <button class="btn--default" data-number="2"></button>
-        <br>
-        <button class="btn--default" data-number="3"></button>
-        <br>
-        <button class="btn--default" data-number="4"></button>
+        <div class="answerbuttons btn-grid" id="answerbuttons">
+          <button class="btn--default" data-number="1"></button>
+          <br>
+          <button class="btn--default" data-number="2"></button>
+          <br>
+          <button class="btn--default" data-number="3"></button>
+          <br>
+          <button class="btn--default" data-number="4"></button>
         </div>
-        <p class="answer">Answer is</p>
+       
     </div>
 </div>
 
@@ -79,9 +80,9 @@
         <h1  id="finalscore">
           0
          </h1>
-
+      
        <button id="replay" onclick="playAgain()">Play Again</button>
-
+      
     </div>
 </div>
 <script src="assets/js/scripts.js"></script>
