@@ -37,56 +37,68 @@ Acceptance criteria:
 * the category title
 * the question
 * the 4 buttons for answers with the answers in them
-<br>
 -5 history questions
 <br>
-5 geography questions
+-5 geography questions
   <br>
-5 cultural questions
+-5 cultural questions
+<br>
+<img>
+<br>
+As a user I want a progress display and a score display so that I can see how far through I am and how I am doing.
+<br>
+As a user I want the progress section and the score section to increment as appropriate so I can see my progress in real time.
+<br>
+Acceptance criteria:
+<br>
+-Progress display
+<br>
+-score display
+<br>
+-score increments when correct answer selected
+<br>
+-progress bar increments after each question
 <br>
 <img>
 <br>
 
+As a user I want new questions for each round that don't repeat within the round.
+<br>
+Acceptance criteria:
+<br>
+-quiz iterates through set number of questions without repeating
+<br>
+-questions and answers show in the html
+<br>
+<img>
+<br>
 
+As a user I can see whether the answer that I have given was correct so that I can learn from my mistakes.
+<br>
+acceptance criteria:
+<br>
+-displays if answer if answer is incorrect or correct
+<br>
+<img>
+<br>
 
-  
+As a user I want an end page to display how I did and let me go back to the the start/welcome page
+<br>
+acceptance criteria:
+<br>
+-header shows which category you were playing
+<br>
+-shows score
+<br>
+-button to return to start page
+<br>
+-hidden when not in use
+<br>
+<img>
+<br>
+
 ## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
 
 ## FAQ about the uptime script
 
