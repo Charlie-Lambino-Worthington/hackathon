@@ -161,18 +161,21 @@ const countriesQuestions = [
 const selectCategory = (category) => {
     switch(category) {
         case "countries":
+          score = 0;
           availableQuestions = [...countriesQuestions];
           document.getElementById("category-name").innerText = "Countries Quiz";
           document.getElementById("name").innerText = "Countries Quiz";
           loadQuiz();
           break;
         case "mountains":
+          score = 0;
           availableQuestions = [...mountainsQuestions];
           document.getElementById("category-name").innerText = "Mountains Quiz";
           document.getElementById("name").innerText = "Mountains Quiz";
           loadQuiz();
           break;
         case "rivers":
+          score = 0;
           availableQuestions = [...riversQuestions];
           document.getElementById("category-name").innerText = "Rivers Quiz";
           document.getElementById("name").innerText = "Rivers Quiz";
@@ -247,6 +250,8 @@ scoreText.innerText = score;
 function displayFinalScore() {
   document.getElementById("end").classList.remove("hide");
   document.getElementById("quiz").classList.add("hide");
+  let finalScore = score;
+  document.getElementById("finalscore").innerText = `${finalScore}/${MAX_QUESTIONS}`
 }
 
 //play again function
