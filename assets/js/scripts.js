@@ -260,5 +260,5 @@ const playAgain = () => {
     score = 0;
     document.getElementById("end").classList.add("hide");
     document.getElementById("category").classList.remove("hide");
- 
+    document.getElementById("score").innerText = 0;
 }
