@@ -9,6 +9,7 @@ This quiz covers a broad spectrum of geographical knowledge, testing participant
 ## Features / User Stories
 
 As a user, I want a welcome screen, so that I know what the quiz game is about and can choose to start a round.
+<br>
 As a user I want the categories to set questions specific to the selected field, so I can play the quiz I selected.
 acceptance criteria:
 <br>
@@ -26,6 +27,29 @@ acceptance criteria:
 <br>
 
 As a user I want multiple choice questions with buttons to select my answers and clear questions.
+<br>
+As a user I want at least 4 or 5 questions per category, so that I can test my general knowledge.
+<br>
+Acceptance criteria:
+<br>
+-neat display of quiz container showing:
+<br>
+* the category title
+* the question
+* the 4 buttons for answers with the answers in them
+<br>
+-5 history questions
+<br>
+5 geography questions
+  <br>
+5 cultural questions
+<br>
+<img>
+<br>
+
+
+
+  
 ## Release History
 
 We continually tweak and adjust this template to help give you the best experience. Here is the version history:
