@@ -14,6 +14,7 @@ body {
   background-color: hsl(var(--hue),100%,20%);
  
 }
+
 .homepage  {
     background-color: white;
     color: rgba(0, 0, 0, 0.764);
@@ -103,11 +104,15 @@ align-items: center;
   align-items: center;
   }
   
-#end {
-  height: 60vh;
-  width: 80%;
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
+ #centerbutton {
+    height: 60vh;
+    width: 100%;
+      display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    }
+#name {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
