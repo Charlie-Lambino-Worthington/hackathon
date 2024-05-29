@@ -197,8 +197,7 @@ document.getElementById("category").classList.add("hide");
 
   const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-      // Go to the end page
-      console.log("end");
+      displayFinalScore()
     }
 
  questionCounter++;
@@ -242,7 +241,7 @@ setTimeout(() => {
 incrementScore = num => {
 score += num;
 scoreText.innerText = score;
-displayFinalScore()
+
 };
 //display final score
 function displayFinalScore() {
