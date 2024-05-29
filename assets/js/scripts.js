@@ -242,7 +242,7 @@ setTimeout(() => {
 incrementScore = num => {
 score += num;
 scoreText.innerText = score;
-diplayFinalScore()
+displayFinalScore()
 };
 //display final score
 function displayFinalScore() {
