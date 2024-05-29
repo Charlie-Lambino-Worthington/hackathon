@@ -198,7 +198,7 @@ document.getElementById("category").classList.add("hide");
   const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
       // Go to the end page
-      consolelog("end")
+      console.log("end");
     }
 
  questionCounter++;
@@ -245,7 +245,10 @@ scoreText.innerText = score;
 diplayFinalScore()
 };
 //display final score
-
+function displayFinalScore() {
+  document.getElementById("end").classList.remove("hide");
+  document.getElementById("quiz").classList.add("hide");
+}
 
 //play again function
 const playAgain = () => {
