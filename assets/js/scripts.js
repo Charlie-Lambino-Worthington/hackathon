@@ -1,11 +1,11 @@
-const quizElement = document.getElementById('quiz');
-const countryCategory = document.getElementById("countriescatagory");
-countryCategory.addEventListener('click' , openCategory);
+//const quizElement = document.getElementById('quiz');
+//const countryCategory = document.getElementById("countriescatagory");
+//countryCategory.addEventListener('click' , openCategory);
 
-function openCategory() {
+//function openCategory() {
   
-  quizElement.classList.remove('hide');
-}
+//  quizElement.classList.remove('hide');
+//}
 
 const questionElement = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('btn--default'));
@@ -187,6 +187,9 @@ const selectCategory = (category) => {
 const loadQuiz = () => {
     questionCounter = 0;
     score = 0;
+document.getElementById("quiz").classList.remove("hide");
+document.getElementById("category").classList.add("hide");
+
     getNewQuestion();
   };
 
@@ -248,5 +251,7 @@ diplayFinalScore()
 const playAgain = () => {
   questionCounter = 0;
     score = 0;
+    document.getElementById("end").classList.add("hide");
+    document.getElementById("category").classList.remove("hide");
  
 }
