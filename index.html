@@ -11,7 +11,9 @@
 
 </head>
 <body>
+
     <div class="container homepage" id ="category">
+
         <div class="container-category">
             <div class="controls">
                 <h1>select category</h1>
@@ -23,6 +25,7 @@
     </div>
     </div>
 </div>
+
 <div class="container homepage hide" id="quiz" >
     <div id="quiz" class="centered">
     
@@ -60,11 +63,19 @@
     </div>
 </div>
 
-<div class="container homepage win-lose hide">
+
+<div class="container homepage win-lose hide" id="end">
+
     <div id="end" class="centered">
     
-        <h1 id="name">f</h1>
-       
+        <h1 id="name">Quiz Name</h1>
+        <br>
+        <p>Congratulations you scored</p>
+        <h1  id="finalscore">
+          0
+         </h1>
+
+       <button id="replay" onclick="playAgain()">Play Again</button>
 
     </div>
 </div>

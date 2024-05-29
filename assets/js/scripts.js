@@ -162,18 +162,20 @@ const selectCategory = (category) => {
     switch(category) {
         case "countries":
           availableQuestions = [...countriesQuestions];
-          document.getElementById("category-name").innerText = "";
-          console.log('author');
+          document.getElementById("category-name").innerText = "Countries Quiz";
+          document.getElementById("name").innerText = "Countries Quiz";
           loadQuiz();
           break;
         case "mountains":
           availableQuestions = [...mountainsQuestions];
-          document.getElementById("category-name").innerText = "";
+          document.getElementById("category-name").innerText = "Mountains Quiz";
+          document.getElementById("name").innerText = "Mountains Quiz";
           loadQuiz();
           break;
         case "rivers":
           availableQuestions = [...riversQuestions];
-          document.getElementById("category-name").innerText = "";
+          document.getElementById("category-name").innerText = "Rivers Quiz";
+          document.getElementById("name").innerText = "Rivers Quiz";
           loadQuiz();
           break;
         }
@@ -237,4 +239,14 @@ setTimeout(() => {
 incrementScore = num => {
 score += num;
 scoreText.innerText = score;
+diplayFinalScore()
 };
+//display final score
+
+
+//play again function
+const playAgain = () => {
+  questionCounter = 0;
+    score = 0;
+ 
+}
