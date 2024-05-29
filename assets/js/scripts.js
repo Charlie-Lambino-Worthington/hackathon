@@ -230,11 +230,14 @@ setTimeout(() => {
 incrementScore = num => {
 score += num;
 scoreText.innerText = score;
+diplayFinalScore()
 };
+//display final score
+
 
 //play again function
 const playAgain = () => {
   questionCounter = 0;
     score = 0;
-    
+ 
 }
