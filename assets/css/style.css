@@ -14,13 +14,14 @@ body {
   background-color: hsl(var(--hue),100%,20%);
  
 }
+
 .homepage  {
     background-color: white;
     color: rgba(0, 0, 0, 0.764);
     width: 80%;
-    height: 95vh;
+    height: 90vh;
     max-width: 700px;
-  margin: 10px auto;
+  margin: 15px auto;
   background-size: 200px 200px;
   animation: scroll 5s linear infinite;
   border: 5px solid rgb(6, 55, 86);
@@ -39,7 +40,6 @@ body {
     width: 250px;
     height: 60px;
     margin: 10px;
-    margin-top: 5%;
     position: relative;
     display: flex;
     align-content: center;
@@ -50,7 +50,7 @@ body {
     font-weight: bold;
     box-shadow: 0px 1px 4px -2px #333;
     text-shadow: 0px -1px #333;
-    margin-bottom: 5px;
+ 
     
 }
 .homepage button:hover {
@@ -86,13 +86,14 @@ body {
 /*quiz buttons*/
 
 #buttoncontainer {
-height: 70vh;
+height: 50vh;
 width: 100%;
   display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+
 
 #answerbuttons {
   height: 60vh;
@@ -103,11 +104,15 @@ align-items: center;
   align-items: center;
   }
   
-#end {
-  height: 60vh;
-  width: 80%;
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
+ #centerbutton {
+    height: 60vh;
+    width: 100%;
+      display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    }
+#name {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
