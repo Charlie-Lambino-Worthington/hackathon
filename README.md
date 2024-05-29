@@ -97,42 +97,21 @@ acceptance criteria:
 <img>
 <br>
 
-## Release History
+## Testing 
+*Testing / Bugs*
+We faced multiple bugs within this project, below are several noteworthy examples and how we fixed them:
+<br>
+*Only one of the category buttons working, the other two cases in the switch statement weren't running, so the quiz section would only display for the first catagory. we moved the loadGame() function after the switch statement, which fixed the issue.
+<br>
+*The quiz was stopping midway through the 5 questions and refusing to proceed to the next question as it was trying to run the displayFinalScore() function and displaying the following error : Uncaught ReferenceError: displayFinalScore is not defined
+    at incrementScore (scripts.js:245:1)
+    at HTMLButtonElement.<anonymous> (scripts.js:229:9)
+This function had yet to be written as we were still working on the main quiz section. We had called the function in the incrementScore() function instead of the getNewQuestion() function.
 
 
-## FAQ about the uptime script
+*Validation*
 
-**Why have you added this script?**
+## Deployment
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Credits 
