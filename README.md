@@ -3,6 +3,7 @@
 ## Geographic quiz,
 
 Our project is a Quiz with a selection of categories which you can select to be taken to a five question quiz on the selected subject.  On completion you will pass to a end screen congratulating you on your score and offering you a button to play again which will take you back to the catagory selector.
+<br>
 This quiz covers a broad spectrum of geographical knowledge, testing participants' familiarity with various countries, significant rivers, and prominent mountain ranges. Each category includes a mix of easier and slightly more challenging questions to cater to a wide range of skill levels.
 
 ## Features / User Stories
@@ -10,13 +11,21 @@ This quiz covers a broad spectrum of geographical knowledge, testing participant
 As a user, I want a welcome screen, so that I know what the quiz game is about and can choose to start a round.
 As a user I want the categories to set questions specific to the selected field, so I can play the quiz I selected.
 acceptance criteria:
+<br>
 -Title
+<br>
 -Start button for each category
+<br>
 -easy to navigate
+<br>
 -responsive
+<br>
 -the categories display different question arrays depending on selection
+<br>
+<img></img>
+<br>
 
-
+As a user I want multiple choice questions with buttons to select my answers and clear questions.
 ## Release History
 
 We continually tweak and adjust this template to help give you the best experience. Here is the version history:
