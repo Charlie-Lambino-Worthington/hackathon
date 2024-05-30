@@ -1,10 +1,25 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 ## Geographic quiz,
-
+![Quiz page wireframe](assets/images/responsive.png)
+<br>
 Our project is a Quiz with a selection of categories which you can select to be taken to a five question quiz on the selected subject.  On completion you will pass to a end screen congratulating you on your score and offering you a button to play again which will take you back to the catagory selector.
 <br>
 This quiz covers a broad spectrum of geographical knowledge, testing participants' familiarity with various countries, significant rivers, and prominent mountain ranges. Each category includes a mix of easier and slightly more challenging questions to cater to a wide range of skill levels.
+
+## Wire frames
+Our wire frame of the category selecter, we decided later to align the buttons in a column in all screensizes for consistentcy:
+<br>
+![Category selecter wireframe](assets/images/wireframe1.png)
+<br>
+
+Our Wire frame for the quiz page:
+![Quiz page wireframe](assets/images/wireframe2.png)
+<br>
+
+Our Wire frame for the end page:
+![Quiz page wireframe](assets/images/wireframe3.png)
+<br>
 
 ## Features / User Stories
 
@@ -23,7 +38,7 @@ acceptance criteria:
 <br>
 -the categories display different question arrays depending on selection
 <br>
-<img></img>
+![Quiz page wireframe](assets/images/category.png)
 <br>
 
 As a user I want multiple choice questions with buttons to select my answers and clear questions.
@@ -37,14 +52,17 @@ Acceptance criteria:
 * the category title
 * the question
 * the 4 buttons for answers with the answers in them
+
+<br>
 -5 history questions
 <br>
 -5 geography questions
   <br>
 -5 cultural questions
 <br>
-<img>
-<br>
+
+![Quiz page wireframe](assets/images/multiplechoice.png)
+
 As a user I want a progress display and a score display so that I can see how far through I am and how I am doing.
 <br>
 As a user I want the progress section and the score section to increment as appropriate so I can see my progress in real time.
@@ -59,7 +77,7 @@ Acceptance criteria:
 <br>
 -progress bar increments after each question
 <br>
-<img>
+![Quiz page wireframe](assets/images/score.png)
 <br>
 
 As a user I want new questions for each round that don't repeat within the round.
@@ -70,8 +88,7 @@ Acceptance criteria:
 <br>
 -questions and answers show in the html
 <br>
-<img>
-<br>
+
 
 As a user I can see whether the answer that I have given was correct so that I can learn from my mistakes.
 <br>
@@ -79,8 +96,7 @@ acceptance criteria:
 <br>
 -displays if answer if answer is incorrect or correct
 <br>
-<img>
-<br>
+
 
 As a user I want an end page to display how I did and let me go back to the the start/welcome page
 <br>
@@ -94,7 +110,7 @@ acceptance criteria:
 <br>
 -hidden when not in use
 <br>
-<img>
+![Quiz page wireframe](assets/images/end.png)
 <br>
 
 ## Testing 
@@ -107,7 +123,7 @@ We faced multiple bugs within this project, below are several noteworthy example
     at incrementScore (scripts.js:245:1)
     at HTMLButtonElement.<anonymous> (scripts.js:229:9)
 This function had yet to be written as we were still working on the main quiz section. We had called the function in the incrementScore() function instead of the getNewQuestion() function.
-
+<br>
 
 *Validation*
 
