@@ -212,5 +212,6 @@ https://www.youtube.com/watch?v=ISeyrczkzGY
 
 *Media*
 
-The pbackground image used on this game is sourced from
-The images used for the gallery page were taken from this other open source site
+The pbackground image used on this game is sourced from Unsplash.  green pine trees on rocky mountain under blue sky during daytime. this free HD photo of canada, athabasca falls, improvement district no. 12, and ab in Canada by Accolade Creative (@accolade) :
+<br>
+https://unsplash.com/photos/green-pine-trees-on-rocky-mountain-under-blue-sky-during-daytime-nkWteg-4-5c
