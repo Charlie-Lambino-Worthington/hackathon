@@ -38,7 +38,7 @@ acceptance criteria:
 <br>
 -the categories display different question arrays depending on selection
 <br>
-![Quiz page wireframe](assets/images/category.png)
+![categories](assets/images/category.png)
 <br>
 
 As a user I want multiple choice questions with buttons to select my answers and clear questions.
@@ -61,7 +61,7 @@ Acceptance criteria:
 -5 cultural questions
 <br>
 
-![Quiz page wireframe](assets/images/multiplechoice.png)
+![Quiz page](assets/images/multiplechoice.png)
 
 As a user I want a progress display and a score display so that I can see how far through I am and how I am doing.
 <br>
@@ -77,7 +77,7 @@ Acceptance criteria:
 <br>
 -progress bar increments after each question
 <br>
-![Quiz page wireframe](assets/images/score.png)
+![score and progress](assets/images/score.png)
 <br>
 
 As a user I want new questions for each round that don't repeat within the round.
@@ -110,7 +110,7 @@ acceptance criteria:
 <br>
 -hidden when not in use
 <br>
-![Quiz page wireframe](assets/images/end.png)
+![end page](assets/images/end.png)
 <br>
 
 ## Testing 
@@ -136,16 +136,81 @@ This function had yet to be written as we were still working on the main quiz se
 Validating the CSS found no errors : This document validates as CSS level 3 + SVG !
 <br>
 
-Validating the HTML Found a couple of instances of repeated use of an id all of which we changhed for classes.
+![css validator](assets/images/css.png)
+<br>
+
+Validating the HTML Found a couple of instances of repeated use of an id all of which we changed for classes.
 <br>
 It also found a stray div closing element which was removed.
 <br>
 As well as multiple warnings for empty heading elements, which are there to be filled using the javascript and were put there purposefully.
 <br>
 
+![html validator](assets/images/html.png)
+<br>
 
+Validating the JavaScript found several missing semi-colons which have been added.
+<br>
+It also had warnings such as:
+	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+  'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+'spread operator' is only available in ES6 (use 'esversion: 6').
+	['number'] is better written in dot notation.
+  <br>
+Which have not been rectified as it would require a complete rewrite and they are not breaking functionality.
+<br>
+It also found: One undefined variable incrementScore, which has been left due to time constraints as it is not breaking functionality.
+<br>
+As well as two unused variables selectCategory and	playAgain Which are called in the html rather than the Javascript which we believe to be why they are reading as unused, since they are working in live testing.
+
+![js1 validator](assets/images/js1.png)
+![js2 validator](assets/images/js2.png)
 
 ## Deployment
 
+In this section, the tested and validated product will be deployed and external resources used during this exercise will be mentioned.
+
+Final Product
+<br>
+
+![Quiz page wireframe](assets/images/responsive.png)
+<br>
+The product is live and can be seen on [url of deployed site]
+Category selection Page:
+<br>
+https://charlie-lambino-worthington.github.io/hackathon/
+
+Kanban Board
+<br>
+
+![Kanban](assets/images/kanban.png)
+<br>
+
+Our Kanban board shows the distribution of tasks beween our 3 team members. It is linked here: https://github.com/users/Charlie-Lambino-Worthington/projects/2
+
+along with our repository link :
+<br> 
+https://github.com/Charlie-Lambino-Worthington/hackathon
+
 
 ## Credits 
+
+
+
+*Content*
+
+-The icons for the category buttons were sourced from Font Awesome.
+<br>
+-The questions for the Quiz were sourced using chatgpt.
+<br>
+-Instructions and inspiration on how to implement a quiz game was taken from James Q Quick on YouTube, with his series Build a Quiz App with HTML, CSS, and JavaScript linked below: <br> https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx
+<br>
+-inspiration for how to use a switch statement to change categories was taken from Moo ICT on youtube with his video Make a Character Selection project using HTML CSS and JavaScript linked below:
+<br>
+https://www.youtube.com/watch?v=ISeyrczkzGY
+
+*Media*
+
+The pbackground image used on this game is sourced from
+The images used for the gallery page were taken from this other open source site
