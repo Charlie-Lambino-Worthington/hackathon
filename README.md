@@ -115,17 +115,35 @@ acceptance criteria:
 
 ## Testing 
 *Testing / Bugs*
+
 We faced multiple bugs within this project, below are several noteworthy examples and how we fixed them:
 <br>
-*Only one of the category buttons working, the other two cases in the switch statement weren't running, so the quiz section would only display for the first catagory. we moved the loadGame() function after the switch statement, which fixed the issue.
+-Only one of the category buttons working, the other two cases in the switch statement weren't running, so the quiz section would only display for the first catagory. we moved the loadGame() function after the switch statement, which fixed the issue.
 <br>
-*The quiz was stopping midway through the 5 questions and refusing to proceed to the next question as it was trying to run the displayFinalScore() function and displaying the following error : Uncaught ReferenceError: displayFinalScore is not defined
+
+-The quiz was stopping midway through the 5 questions and refusing to proceed to the next question as it was trying to run the displayFinalScore() function and displaying the following error : Uncaught ReferenceError: displayFinalScore is not defined
     at incrementScore (scripts.js:245:1)
     at HTMLButtonElement.<anonymous> (scripts.js:229:9)
 This function had yet to be written as we were still working on the main quiz section. We had called the function in the incrementScore() function instead of the getNewQuestion() function.
 <br>
 
+-The quiz would restart with the final score of the previous round displaying, we tried to reset score to 0 in Javascript but the game continued to show the previous score until a point was scored in the new round. We fixed this by resetting the innerText of the score element in the playAgain() function
+<br>
+
 *Validation*
+<br>
+
+Validating the CSS found no errors : This document validates as CSS level 3 + SVG !
+<br>
+
+Validating the HTML Found a couple of instances of repeated use of an id all of which we changhed for classes.
+<br>
+It also found a stray div closing element which was removed.
+<br>
+As well as multiple warnings for empty heading elements, which are there to be filled using the javascript and were put there purposefully.
+<br>
+
+
 
 ## Deployment
 
