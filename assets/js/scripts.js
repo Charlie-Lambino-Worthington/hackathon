@@ -1,12 +1,3 @@
-//const quizElement = document.getElementById('quiz');
-//const countryCategory = document.getElementById("countriescatagory");
-//countryCategory.addEventListener('click' , openCategory);
-
-//function openCategory() {
-  
-//  quizElement.classList.remove('hide');
-//}
-
 const questionElement = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('btn--default'));
 const questionCounterText = document.getElementById("questionCounter");
@@ -66,7 +57,7 @@ const countriesQuestions = [
     choice4: 'Hamburg',
     answer: 2
   }
-]
+];
 
    const mountainsQuestions = [
 
@@ -110,7 +101,7 @@ const countriesQuestions = [
       choice4: 'Mount Elbrus',
       answer: 2
     }
-  ]
+  ];
 
    const riversQuestions = [
 
@@ -154,7 +145,7 @@ const countriesQuestions = [
       choice4: 'Dnieper River',
       answer: 3
     }     
-  ]
+  ];
 
    //category select function
 
@@ -200,7 +191,7 @@ document.getElementById("category").classList.add("hide");
 
   const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-      displayFinalScore()
+      displayFinalScore();
     }
 
  questionCounter++;
@@ -251,7 +242,7 @@ function displayFinalScore() {
   document.getElementById("end").classList.remove("hide");
   document.getElementById("quiz").classList.add("hide");
   let finalScore = score;
-  document.getElementById("finalscore").innerText = `${finalScore}/${MAX_QUESTIONS}`
+  document.getElementById("finalscore").innerText = `${finalScore}/${MAX_QUESTIONS}`;
 }
 
 //play again function
@@ -261,4 +252,4 @@ const playAgain = () => {
     document.getElementById("end").classList.add("hide");
     document.getElementById("category").classList.remove("hide");
     document.getElementById("score").innerText = 0;
-}
+};
