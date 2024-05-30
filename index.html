@@ -8,10 +8,23 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <title>Online Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
+<style>
+  body {
+  background-image: url("assets/images/accolade-creative-nkWteg-4-5c-unsplash.jpg");
+background-size: cover;
 
+  }
+  @media (max-width:480px) {
+    body{
+      background-image: url("assets/images/accolade-creative-nkWteg-4-5c-unsplash.jpg");
+background-size: inherit;
+
+    }
+  }
+</style>
 </head>
 <body>
-
+<section>
     <div class="container homepage" id ="category">
 
         <div class="container-category">
@@ -29,9 +42,9 @@
       </div>
     </div>
     </div>
-</div>
+  </div>
 
-<div class="container homepage hide" id="quiz" >
+  <div class="container homepage hide" id="quiz" >
     <div id="quiz" class="centered">
     
         <h1 id="category-name"></h1>
@@ -51,7 +64,7 @@
               </h1>
             </div>
           </div>
-<br>
+          <br>
         <h2 id="question" class="headline-seconday--grouped"></h2>
     
     
@@ -66,10 +79,10 @@
         </div>
        
     </div>
-</div>
+  </div>
 
 
-<div class="container homepage win-lose centerbutton hide" id="end">
+  <div class="container homepage win-lose centerbutton hide" id="end">
 
     <div id="end" class="centered">
         <br>
@@ -86,7 +99,8 @@
         <button id="replay" onclick="playAgain()">Play Again</button>
       </div>
     </div>
-</div>
+  </div>
+</section>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>
